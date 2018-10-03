@@ -32,7 +32,7 @@ namespace _02_HelloWorld_WPF
 
             nombre = tbNombre.Text;
 
-            lblVacio = $"Hola {nombre}";
+            lblVacio1.Content = $"Hola {nombre}";
 
 
 

@@ -9,7 +9,7 @@
     <Grid x:Name="lblVacio" Margin="0,0,2,-2">
         <Label Content="Escribe tu nombre" HorizontalAlignment="Left" Margin="31,77,0,0" VerticalAlignment="Top"/>
         <Button Content="Saludar" HorizontalAlignment="Left" Margin="179,108,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="Button_Click"/>
-        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="31,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="31,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblVacio1" Content="" HorizontalAlignment="Left" Margin="31,145,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
