@@ -1,0 +1,16 @@
+﻿<Window x:Class="_02_HelloWorld_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_02_HelloWorld_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="222" Width="308">
+    <Grid x:Name="lblVacio" Margin="0,0,2,-2">
+        <Label Content="Escribe tu nombre" HorizontalAlignment="Left" Margin="31,77,0,0" VerticalAlignment="Top"/>
+        <Button Content="Saludar" HorizontalAlignment="Left" Margin="179,108,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="Button_Click"/>
+        <TextBox x:Name="tbNombre" HorizontalAlignment="Left" Height="23" Margin="31,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblVacio1" Content="" HorizontalAlignment="Left" Margin="31,145,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
