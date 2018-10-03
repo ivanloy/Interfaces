@@ -1,0 +1,16 @@
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\bin\Debug\01-HelloWorld-Windows Form-VB.exe.config
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\bin\Debug\01-HelloWorld-Windows Form-VB.exe
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\bin\Debug\01-HelloWorld-Windows Form-VB.pdb
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\bin\Debug\01-HelloWorld-Windows Form-VB.xml
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\01-HelloWorld-Windows Form-VB.vbprojAssemblyReference.cache
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\_01_HelloWorld_Windows_Form_VB.Form1.resources
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\_01_HelloWorld_Windows_Form_VB.Resources.resources
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\01-HelloWorld-Windows Form-VB.vbproj.GenerateResource.cache
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\01-HelloWorld-Windows Form-VB.vbproj.CoreCompileInputs.cache
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\01-HelloWorld-Windows Form-VB.exe
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\01-HelloWorld-Windows Form-VB.xml
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\01-HelloWorld-Windows Form-VB.pdb
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\bin\Debug\01-HelloWorld-Windows Forms-C.exe
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\bin\Debug\01-HelloWorld-Windows Forms-C.pdb
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\bin\Debug\01-HelloWorld-Windows Forms-C.exe.config
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Form-VB\obj\Debug\01-HelloWorld-Windows Form-VB.vbproj.CopyComplete

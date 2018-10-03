@@ -1,0 +1,10 @@
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\bin\Debug\01-HelloWorld-Windows Forms-C.exe.config
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\bin\Debug\01-HelloWorld-Windows Forms-C.exe
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\bin\Debug\01-HelloWorld-Windows Forms-C.pdb
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\obj\Debug\01-HelloWorld-Windows Forms-C.csprojAssemblyReference.cache
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\obj\Debug\_01_HelloWorld_Windows_Forms_C.Form1.resources
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\obj\Debug\_01_HelloWorld_Windows_Forms_C.Properties.Resources.resources
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\obj\Debug\01-HelloWorld-Windows Forms-C.csproj.GenerateResource.cache
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\obj\Debug\01-HelloWorld-Windows Forms-C.csproj.CoreCompileInputs.cache
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\obj\Debug\01-HelloWorld-Windows Forms-C.exe
+C:\Users\jobando\source\repos\01-HelloWorld-Windows Forms\01-HelloWorld-Windows Forms-C\obj\Debug\01-HelloWorld-Windows Forms-C.pdb
