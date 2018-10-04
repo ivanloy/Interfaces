@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="_04_BotonesYPropiedades.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_04_BotonesYPropiedades"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+
+        <Button Content="Boton1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Blue" BorderBrush="Yellow" FontFamily="verdana" FontSize="16" FontWeight="Bold" Height="70" Width="200"></Button>
+
+        <Button Click="Button_Click">
+            <Button.Content>Boton2</Button.Content>
+            <Button.VerticalAlignment>Center</Button.VerticalAlignment>
+            <Button.HorizontalAlignment>Center</Button.HorizontalAlignment>
+            <Button.Background>Blue</Button.Background>
+            <Button.BorderBrush>Yellow</Button.BorderBrush>
+            <Button.FontFamily>verdana</Button.FontFamily>
+            <Button.FontSize>16</Button.FontSize>
+            <Button.FontWeight>Bold</Button.FontWeight>
+            <Button.Height>70</Button.Height>
+            <Button.Width>200</Button.Width>
+        </Button>
+    </StackPanel>
+</Page>
