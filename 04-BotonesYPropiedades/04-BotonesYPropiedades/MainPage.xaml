@@ -12,7 +12,7 @@
 
         <Button Content="Boton1" VerticalAlignment="Center" HorizontalAlignment="Center" Background="Blue" BorderBrush="Yellow" FontFamily="verdana" FontSize="16" FontWeight="Bold" Height="70" Width="200"></Button>
 
-        <Button Click="Button_Click">
+        <Button>
             <Button.Content>Boton2</Button.Content>
             <Button.VerticalAlignment>Center</Button.VerticalAlignment>
             <Button.HorizontalAlignment>Center</Button.HorizontalAlignment>

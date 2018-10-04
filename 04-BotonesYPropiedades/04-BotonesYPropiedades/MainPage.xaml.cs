@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -32,9 +33,12 @@ namespace _04_BotonesYPropiedades
 
 
             //Asignacion de propiedades al boton
+            boton.Content = "Boton3";
+            boton.VerticalAlignment = VerticalAlignment.Center;
+            boton.HorizontalAlignment = HorizontalAlignment.Center;
             boton.Height = 70;
             boton.Width = 200;
-            boton.Font = 
+            
 
         }
 
