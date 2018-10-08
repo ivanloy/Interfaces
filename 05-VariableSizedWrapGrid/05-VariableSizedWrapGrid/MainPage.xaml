@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="_05_VariableSizedWrapGrid.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_05_VariableSizedWrapGrid"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <VariableSizedWrapGrid Orientation="Horizontal">
+
+            <Button>
+                <Button.Content>Boton 1</Button.Content>
+            </Button>
+            <Button>
+                <Button.Content>Boton 2</Button.Content>
+            </Button>
+            <Button>
+                <Button.Content>Boton 3</Button.Content>
+            </Button>
+            <Button>
+                <Button.Content>Boton 4</Button.Content>
+            </Button>
+            <Button>
+                <Button.Content>Boton 5</Button.Content>
+            </Button>
+            <Button>
+                <Button.Content>Boton 6</Button.Content>
+            </Button>
+
+        </VariableSizedWrapGrid>
+
+    </Grid>
+</Page>

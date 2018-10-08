@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="_06_RelativePanel.RelativePanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_06_RelativePanel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        
+        <!--Navegador superior-->
+        <StackPanel Name="navegadorSuperior" 
+                    Orientation="Horizontal" 
+                    RelativePanel.AlignTopWithPanel="True">
+
+           <AppBarButton Icon="Save"></AppBarButton>
+           <AppBarButton Icon="Add"></AppBarButton>
+           <AppBarButton Icon="Delete"></AppBarButton>
+           <AppBarButton Icon="Find"></AppBarButton>
+            
+        </StackPanel>
+
+        <!--Lista con contenido-->
+        <ListView Name="lista" RelativePanel.Below="navegadorSuperior"
+                  RelativePanel.Above="boton"
+                  RelativePanel.AlignLeftWith="navegadorSuperior"
+                  RelativePanel.AlignRightWith="navegadorSuperior">
+            
+            <ListView.Items>
+
+                <ListViewItem>Patata</ListViewItem>
+                <ListViewItem>Cebolla</ListViewItem>
+                <ListViewItem>Zanahoria</ListViewItem>
+                <ListViewItem>Puerro</ListViewItem>
+                
+            </ListView.Items>
+            
+        </ListView>
+
+
+
+        <!--Boton para agregar-->
+        <Button Name="boton" 
+                RelativePanel.Above="navegadorInferior" 
+                RelativePanel.AlignRightWith="navegadorSuperior" Click="boton_Click">
+            +   
+        </Button>
+
+
+        <!--Navegador inferior-->
+        <StackPanel Name="navegadorInferior" 
+                    RelativePanel.AlignBottomWithPanel="True" 
+                    RelativePanel.AlignLeftWith="navegadorSuperior"
+                    RelativePanel.AlignRightWith="navegadorSuperior"
+                    HorizontalAlignment="Center"
+                    Orientation="Horizontal">
+            
+            <AppBarButton Icon="Back"></AppBarButton>
+            <AppBarButton Icon="Forward"></AppBarButton>
+
+        </StackPanel>
+        
+        
+        
+    </RelativePanel>
+</Page>

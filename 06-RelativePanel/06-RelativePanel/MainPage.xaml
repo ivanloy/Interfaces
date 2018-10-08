@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="_06_RelativePanel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_06_RelativePanel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel BorderBrush="Gray" BorderThickness="1">
+        <Rectangle x:Name="RedRect" Fill="Red" Height="44" 	Width="44"/>
+        <Button RelativePanel.AlignRightWithPanel="True" Click="Button_Click">Ir a la otra pagina</Button>
+        <Rectangle x:Name="BlueRect" Fill="Blue" Height="44" Width="88" 	RelativePanel.RightOf="RedRect" />
+        <Rectangle x:Name="GreenRect" Fill="Green" Height="44" 	RelativePanel.Below="RedRect" 	RelativePanel.AlignLeftWith="RedRect" 	RelativePanel.AlignRightWith="BlueRect"/>
+        <Rectangle Fill="Yellow" RelativePanel.Below="GreenRect" 	RelativePanel.AlignLeftWith="BlueRect" 	RelativePanel.AlignRightWithPanel="True" 	RelativePanel.AlignBottomWithPanel="True"/>
+    </RelativePanel>
+
+</Page>

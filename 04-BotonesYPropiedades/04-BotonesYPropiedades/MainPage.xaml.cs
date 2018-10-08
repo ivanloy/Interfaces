@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,16 @@ namespace _04_BotonesYPropiedades
         public MainPage()
         {
             this.InitializeComponent();
+            crearBoton();
+
+
+        }
+
+        /// <summary>
+        /// Creamos un boton y lo añadimos a un Stack Panel
+        /// </summary>
+        public void crearBoton() {
+
 
 
             //Creacion del objeto boton
@@ -32,12 +43,9 @@ namespace _04_BotonesYPropiedades
 
 
             //Asignacion de propiedades al boton
-<<<<<<< Updated upstream
-            boton.Height = 70;
-            boton.Width = 200;
-            boton.Font = 
-=======
-<<<<<<< HEAD
+
+
+
             boton.Content = "Boton 3";
             boton.Height = 70;
             boton.Width = 200;
@@ -67,14 +75,11 @@ namespace _04_BotonesYPropiedades
             MessageDialog mensage = new MessageDialog("Hola");
 
             await mensage.ShowAsync();
-=======
-            boton.Height = 70;
-            boton.Width = 200;
-            boton.Font = 
->>>>>>> parent of 9ba2865... Peta, solucionar mañana
->>>>>>> Stashed changes
 
         }
+
+
+      
 
       
     }
