@@ -17,11 +17,13 @@
         </StackPanel>
         
         <Grid Name="grdFormulario" 
-              RelativePanel.Below="stkPanelBotones" >
+              RelativePanel.Below="stkPanelBotones" 
+              RelativePanel.AlignLeftWithPanel="True"
+              RelativePanel.AlignRightWithPanel="True">
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -33,18 +35,28 @@
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Apellido:" VerticalAlignment="Center"></TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="0" Text="Email:" VerticalAlignment="Center"></TextBlock>
 
-            <TextBox Grid.Row="0" Grid.Column="1"  Margin="10,0,0,4"  MaxWidth="500"></TextBox>
-            <TextBox Grid.Row="1" Grid.Column="1"  Margin="10,0,0,4"  MaxWidth="500"></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="1"  Margin="10,0,0,4"  MaxWidth="500"></TextBox>
+            <TextBox Name="txtNombre" Grid.Row="0" Grid.Column="1"  Margin="10,0,0,4" Text=""></TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1"  Margin="10,0,0,4" ></TextBox>
+            <TextBox Grid.Row="2" Grid.Column="1"  Margin="10,0,0,4" ></TextBox>
 
-            <TextBlock Grid.Row="0" Grid.Column="2" Text=""> </TextBlock>
+            <TextBlock Name="txtErrorNombre" Foreground="Red" Grid.Row="0" Grid.Column="2" Text="Em, no has puesto na" Visibility="Collapsed"> </TextBlock>
             <TextBlock Grid.Row="1" Grid.Column="2" Text=""> </TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="2" Text=""> </TextBlock>
             
         </Grid>
 
+        <Button
+            Name="btnEnviar"
+            Content="Enviar"
+            Click="btnEnviar_Click"
+            RelativePanel.Below="grdFormulario"
+            />
 
-       
+
+
+
+
+
 
 
     </RelativePanel>

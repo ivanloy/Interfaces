@@ -26,5 +26,21 @@ namespace _07_GridLayout
         {
             this.InitializeComponent();
         }
+
+        private void btnEnviar_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (String.IsNullOrEmpty(txtNombre.Text))
+            {
+
+                txtErrorNombre.Visibility = Visibility.Visible;    
+
+            }
+            else {
+
+                txtErrorNombre.Visibility = Visibility.Collapsed;
+            }
+
+        }
     }
 }
