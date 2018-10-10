@@ -33,7 +33,7 @@ namespace _06_RelativePanel
         /// <param name="e"></param>
         private void boton_Click(object sender, RoutedEventArgs e)
         {
-            lista.Items.Add("Cebolleta");
+            lvLista.Items.Add("Cebolleta");
         }
 
     }

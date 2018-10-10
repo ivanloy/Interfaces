@@ -11,7 +11,7 @@
     <RelativePanel>
         
         <!--Navegador superior-->
-        <StackPanel Name="navegadorSuperior" 
+        <StackPanel Name="stkNavegadorSuperior" 
                     Orientation="Horizontal" 
                     RelativePanel.AlignTopWithPanel="True">
 
@@ -23,10 +23,10 @@
         </StackPanel>
 
         <!--Lista con contenido-->
-        <ListView Name="lista" RelativePanel.Below="navegadorSuperior"
-                  RelativePanel.Above="boton"
-                  RelativePanel.AlignLeftWith="navegadorSuperior"
-                  RelativePanel.AlignRightWith="navegadorSuperior">
+        <ListView Name="lvLista" RelativePanel.Below="stkNavegadorSuperior"
+                  RelativePanel.Above="stkNavegadorInferior"
+                  RelativePanel.AlignLeftWith="stkNavegadorSuperior"
+                  RelativePanel.AlignRightWith="stkNavegadorSuperior">
             
             <ListView.Items>
 
@@ -42,18 +42,18 @@
 
 
         <!--Boton para agregar-->
-        <Button Name="boton" 
-                RelativePanel.Above="navegadorInferior" 
-                RelativePanel.AlignRightWith="navegadorSuperior" Click="boton_Click">
-            +   
-        </Button>
+        <AppBarButton Name="boton" 
+                Icon="Add"
+                RelativePanel.Above="stkNavegadorInferior" 
+                RelativePanel.AlignRightWith="stkNavegadorSuperior" Click="boton_Click">
+        </AppBarButton>
 
 
         <!--Navegador inferior-->
-        <StackPanel Name="navegadorInferior" 
+        <StackPanel Name="stkNavegadorInferior" 
                     RelativePanel.AlignBottomWithPanel="True" 
-                    RelativePanel.AlignLeftWith="navegadorSuperior"
-                    RelativePanel.AlignRightWith="navegadorSuperior"
+                    RelativePanel.AlignLeftWith="stkNavegadorSuperior"
+                    RelativePanel.AlignRightWith="stkNavegadorSuperior"
                     HorizontalAlignment="Center"
                     Orientation="Horizontal">
             

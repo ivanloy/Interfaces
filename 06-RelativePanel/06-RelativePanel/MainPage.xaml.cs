@@ -27,6 +27,11 @@ namespace _06_RelativePanel
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Evento asociado al boton que nos permite navegar a la segunda pagina
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(RelativePanel));
