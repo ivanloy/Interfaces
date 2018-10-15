@@ -5,6 +5,7 @@
     xmlns:local="using:_07_GridLayout"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -24,6 +25,7 @@
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -34,14 +36,18 @@
             <TextBlock Grid.Row="0" Grid.Column="0" Text="Nombre:" VerticalAlignment="Center"></TextBlock>
             <TextBlock Grid.Row="1" Grid.Column="0" Text="Apellido:" VerticalAlignment="Center"></TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="0" Text="Email:" VerticalAlignment="Center"></TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Año nacimiento:" VerticalAlignment="Center"></TextBlock>
 
             <TextBox Name="txtNombre" Grid.Row="0" Grid.Column="1"  Margin="10,0,0,4" Text=""></TextBox>
-            <TextBox Grid.Row="1" Grid.Column="1"  Margin="10,0,0,4" ></TextBox>
-            <TextBox Grid.Row="2" Grid.Column="1"  Margin="10,0,0,4" ></TextBox>
+            <TextBox Name="txtApellido" Grid.Row="1" Grid.Column="1"  Margin="10,0,0,4" ></TextBox>
+            <TextBox Name="txtEmail" Grid.Row="2" Grid.Column="1"  Margin="10,0,0,4"></TextBox>
+            <CalendarDatePicker Name="cdpFechaNacimiento"  Grid.Row="3" Grid.Column="1"  Margin="10,0,0,4"/>
+            <!--<TextBox Name="txtNacimiento" Grid.Row="3" Grid.Column="1"  Margin="10,0,0,4"></TextBox>-->
 
-            <TextBlock Name="txtErrorNombre" Foreground="Red" Grid.Row="0" Grid.Column="2" Text="Em, no has puesto na" Visibility="Collapsed"> </TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="2" Text=""> </TextBlock>
-            <TextBlock Grid.Row="2" Grid.Column="2" Text=""> </TextBlock>
+            <TextBlock Name="txtErrorNombre" Foreground="Red" Grid.Row="0" Grid.Column="2" Text="No puedes dejar este campo vacio" Visibility="Collapsed"> </TextBlock>
+            <TextBlock Name="txtErrorApellido" Foreground="Red" Grid.Row="1" Grid.Column="2" Text="No puedes dejar este campo vacio" Visibility="Collapsed"> </TextBlock>
+            <TextBlock Name="txtErrorEmail" Foreground="Red" Grid.Row="2" Grid.Column="2" Text="Email incorrecto"  Visibility="Collapsed"> </TextBlock>
+            <TextBlock Name="txtErrorNacimiento" Foreground="Red" Grid.Row="3" Grid.Column="2" Text="Año incorrecto"  Visibility="Collapsed"> </TextBlock>
             
         </Grid>
 
