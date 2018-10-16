@@ -44,82 +44,81 @@
                 RelativePanel.AlignLeftWith="b1"
                 Margin="2,2,2,2">
 
-            
-                <RelativePanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
 
-                <Grid Name="sp_rectagulos"
-                            RelativePanel.AlignLeftWithPanel="True">
+                <VariableSizedWrapGrid Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto"></ColumnDefinition>
-                        <ColumnDefinition Width="auto"></ColumnDefinition>
-                        <ColumnDefinition Width="auto"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition  Height="*"></RowDefinition>
-                        <RowDefinition  Height="*"></RowDefinition>
-                        <RowDefinition  Height="*"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    
                     <Rectangle Fill="orange" 
-                               Width="100" 
-                               Height="100"
-                               Margin="2,2,2,2"></Rectangle>
+                                   Width="100" 
+                                   Height="100"
+                                   Margin="2,2,2,2"></Rectangle>
 
                     <Rectangle Fill="Aqua" 
-                               Width="100" 
-                               Height="100"
-                               Margin="2,2,2,2"></Rectangle>
+                                   Width="100" 
+                                   Height="100"
+                                   Margin="2,2,2,2"></Rectangle>
 
                     <Rectangle Fill="ForestGreen" 
-                               Width="100" 
-                               Height="100"
-                               Margin="2,2,2,2"></Rectangle>
+                                   Width="100" 
+                                   Height="100"
+                                   Margin="2,2,2,2"></Rectangle>
 
-                </Grid>
+                    <Rectangle Fill="Bisque" 
+                                   Width="100" 
+                                   Height="100"
+                                   Margin="2,2,2,2"></Rectangle>
+
+                    <Rectangle Fill="Fuchsia" 
+                                   Width="100" 
+                                   Height="100"
+                                   Margin="2,2,2,2"></Rectangle>
+
+                    <Rectangle Fill="Goldenrod" 
+                                   Width="100" 
+                                   Height="100"
+                                   Margin="2,2,2,2"></Rectangle>
+
+                </VariableSizedWrapGrid>
+
+                <RelativePanel Grid.Column="1" Grid.Row="0">
                     
-                <StackPanel Name="sp_textos"  
-                            RelativePanel.AlignRightWithPanel="True">
-                    
-                    <Border BorderThickness="3"  
+                    <Border Name="caja1"
+                            RelativePanel.AlignRightWithPanel="True"
+                            RelativePanel.AlignLeftWithPanel="True"
+                            BorderThickness="3"  
                             BorderBrush="Black"
                             Margin="2,2,2,2">
-                        <TextBlock TextWrapping="Wrap">
-                         Esto no sale ni patraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas
-                        </TextBlock>
+
+                        <TextBlock TextWrapping="Wrap">Tampoco se que escribir aqui sabes? Es que no tengo
+                                            mucha inventiva de esa, me das un poco?</TextBlock>
                     </Border>
 
-                    <Border  BorderThickness="3"  
-                             BorderBrush="Black"
-                             Margin="2,2,2,2">
-                        <TextBlock TextWrapping="Wrap">
-                         Esto no sale ni patraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas
-                        </TextBlock>
-                    </Border >
+                    <Border Name="caja2"
+                            RelativePanel.AlignRightWithPanel="True"
+                            RelativePanel.AlignLeftWithPanel="True"
+                            RelativePanel.Below="caja1"
+                            BorderThickness="3"  
+                            BorderBrush="Black"
+                            Margin="2,2,2,2">
 
-                    <Border  RelativePanel.Below="caja2"
-                             BorderThickness="3"  
-                             BorderBrush="Black"
-                             Margin="2,2,2,2">
-                        <TextBlock TextWrapping="Wrap">
-                         Esto no sale ni patraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas
-                        </TextBlock>
+                        <TextBlock TextWrapping="Wrap">Tampoco se que escribir aqui sabes? Es que no tengo
+                                            mucha inventiva de esa, me das un poco?</TextBlock>
                     </Border>
 
-                    <Border  BorderThickness="3"  
-                             BorderBrush="Black"
-                             Margin="2,2,2,2">
-                        <TextBlock TextWrapping="Wrap">
-                         Esto no sale ni patraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas
-                        </TextBlock>
-                    </Border>
-                </StackPanel>
-            </RelativePanel>
-                
-                
-            
-            
+
+                </RelativePanel>
+
+
+
+            </Grid>
+
         </Border>
 
 
@@ -131,6 +130,7 @@
                 RelativePanel.AlignRightWith="b1"
                 RelativePanel.AlignLeftWith="b1"
                 Margin="2,2,2,2">
+
                
 
         </Border>
