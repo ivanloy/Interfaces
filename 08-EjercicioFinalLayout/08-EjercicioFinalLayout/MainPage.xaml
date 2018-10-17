@@ -53,7 +53,10 @@
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <VariableSizedWrapGrid Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+                <ScrollViewer
+                        VerticalScrollBarVisibility="Auto">
+
+                    <VariableSizedWrapGrid Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
 
                     <Rectangle Fill="orange" 
                                    Width="100" 
@@ -87,6 +90,8 @@
 
                 </VariableSizedWrapGrid>
 
+                </ScrollViewer>
+
                 <RelativePanel Grid.Column="1" Grid.Row="0">
                     
                     <Border Name="caja1"
@@ -112,8 +117,33 @@
                                             mucha inventiva de esa, me das un poco?</TextBlock>
                     </Border>
 
+                    <Border Name="caja3"
+                            RelativePanel.AlignRightWithPanel="True"
+                            RelativePanel.AlignLeftWithPanel="True"
+                            RelativePanel.Below="caja2"
+                            BorderThickness="3"  
+                            BorderBrush="Black"
+                            Margin="2,2,2,2">
+
+                        <TextBlock TextWrapping="Wrap">Tampoco se que escribir aqui sabes? Es que no tengo
+                                            mucha inventiva de esa, me das un poco?</TextBlock>
+                    </Border>
+
+                    <Border Name="caja4"
+                            RelativePanel.AlignRightWithPanel="True"
+                            RelativePanel.AlignLeftWithPanel="True"
+                            RelativePanel.Below="caja3"
+                            BorderThickness="3"  
+                            BorderBrush="Black"
+                            Margin="2,2,2,2">
+
+                        <TextBlock TextWrapping="Wrap">Tampoco se que escribir aqui sabes? Es que no tengo
+                                            mucha inventiva de esa, me das un poco?</TextBlock>
+                    </Border>
+
 
                 </RelativePanel>
+               
 
 
 
