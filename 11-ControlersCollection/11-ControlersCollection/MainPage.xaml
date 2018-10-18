@@ -1,0 +1,102 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="_11_ControlersCollection.MainPage"
+    xmlns:local="using:_11_ControlersCollection"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition  Width="*"></ColumnDefinition>
+            <ColumnDefinition  Width="*"></ColumnDefinition>
+            <ColumnDefinition  Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <!--Primera fila-->
+        <StackPanel Grid.Column="0" Grid.Row="0">
+            <RadioButton Content="Anime" Foreground="CadetBlue"></RadioButton>
+            <RadioButton Content="Manga"></RadioButton>
+            <RadioButton Content="Novela"></RadioButton>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <Slider Width="200" x:Name="progreso" ValueChanged="Slider_ValueChanged"/>
+            <ProgressBar x:Name="barraProgreso" Width="200" IsIndeterminate="False"></ProgressBar>
+        </StackPanel>
+        
+
+        <Button Content="Que hara este boton (?)" ToolTipService.ToolTip="Este boton hace cosas guays" Grid.Column="2" Grid.Row="0"></Button>
+
+        <Pivot Grid.Column="3" Grid.Row="0">
+            <PivotItem Header="Section 1">
+                <StackPanel>
+                    <CheckBox Content="Jeje"></CheckBox>
+                    <CheckBox Content="Jeje2"></CheckBox>
+                    <CheckBox Content="Te creias que seria jeje3?"></CheckBox>
+                </StackPanel>
+            </PivotItem>
+            <PivotItem Header="Section 2">
+                <TextBlock Text="Content of section 2."/>
+            </PivotItem>
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Section 3"></TextBlock>
+                        <TextBlock Text="&#xE7C3;" 
+                                   FontFamily="Segoe MDL2 Assets"
+                                   VerticalAlignment="Center"
+                                   Margin="6,2,2,2"></TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+            </PivotItem>
+        </Pivot>
+        
+        
+        <!--Segunda fila-->
+
+        <ComboBox SelectedIndex="0" Grid.Column="0" Grid.Row="1">
+            <ComboBoxItem>Esto esta por defecto</ComboBoxItem>
+            <ComboBoxItem>Cosa 1</ComboBoxItem>
+            <ComboBoxItem>Cosa 3</ComboBoxItem>
+            <ComboBoxItem>Soy el mejon</ComboBoxItem>
+        </ComboBox>
+
+        
+
+        <StackPanel Grid.Column="2" Grid.Row="1">
+            <PasswordBox></PasswordBox>
+            <TextBox IsSpellCheckEnabled="True"></TextBox>
+        </StackPanel>
+
+        <CalendarView Grid.Column="3" Grid.Row="1"></CalendarView>
+        
+        
+        <!--Tercera fila-->
+
+        <CalendarDatePicker Grid.Column="0" Grid.Row="2"></CalendarDatePicker>
+
+        <DatePicker Grid.Column="1" Grid.Row="2"></DatePicker>
+
+        <StackPanel Grid.Column="2" Grid.Row="2">
+            <InkToolbar TargetInkCanvas="{x:Bind myInkCanvas}"/>
+            <InkCanvas x:Name="myInkCanvas" Width="500" Height="500"></InkCanvas>
+        </StackPanel>
+        
+
+
+
+
+
+    </Grid>
+</Page>
