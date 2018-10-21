@@ -88,9 +88,12 @@
 
         <DatePicker Grid.Column="1" Grid.Row="2"></DatePicker>
 
-        <StackPanel Grid.Column="2" Grid.Row="2">
+        <StackPanel Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2">
             <InkToolbar TargetInkCanvas="{x:Bind myInkCanvas}"/>
-            <InkCanvas x:Name="myInkCanvas" Width="500" Height="500"></InkCanvas>
+            <Border BorderThickness="2" BorderBrush="Black">
+                <InkCanvas x:Name="myInkCanvas" Width="auto" Height="450"></InkCanvas>
+            </Border>
+            
         </StackPanel>
         
 
