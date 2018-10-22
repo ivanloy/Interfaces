@@ -36,7 +36,7 @@
         </StackPanel>
         
 
-        <Button Content="Que hara este boton (?)" ToolTipService.ToolTip="Este boton hace cosas guays" Grid.Column="2" Grid.Row="0"></Button>
+        <Button Click="Button_Click" Content="Que hara este boton (?)" ToolTipService.ToolTip="Este boton hace cosas guays" Grid.Column="2" Grid.Row="0"></Button>
 
         <Pivot Grid.Column="3" Grid.Row="0">
             <PivotItem Header="Section 1">
@@ -89,11 +89,10 @@
         <DatePicker Grid.Column="1" Grid.Row="2"></DatePicker>
 
         <StackPanel Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="2">
-            <InkToolbar TargetInkCanvas="{x:Bind myInkCanvas}"/>
-            <Border BorderThickness="2" BorderBrush="Black">
-                <InkCanvas x:Name="myInkCanvas" Width="auto" Height="450"></InkCanvas>
-            </Border>
             
+
+            
+
         </StackPanel>
         
 

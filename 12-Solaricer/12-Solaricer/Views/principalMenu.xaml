@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="_12_Solaricer.Views.principalMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_12_Solaricer.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel HorizontalAlignment="Center">
+
+        <Pivot RelativePanel.AlignTopWithPanel="True"
+               HorizontalAlignment="Center">
+            <PivotItem Header="ROUTE" HorizontalAlignment="Center">
+ 
+                       <Maps:MapControl 
+                           HorizontalAlignment="Center"
+                       x:Name="MapControl1" 
+                       Height="500"
+                       Width="800"
+                       MapServiceToken="i0LX0ZtyCNlqrCpfAe4o~UOcr-lGr9izrFCmZtL2qjg~AttsrrQUiwrEJOnzJkpGooFH-_dKrzLCSmjLJR6cu9ZMhiAsoEVrSTtw1DXYJL82"
+                       ZoomInteractionMode="GestureAndControl"
+                       TiltInteractionMode="GestureAndControl"/>
+
+            </PivotItem>
+
+            <PivotItem Header="LIST"  HorizontalAlignment="Center">
+
+                <ListView x:Name="listView1" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <FontIcon  FontFamily="Segoe MDL2 Assets" 
+                                   Glyph="&#xE707;"
+                                   Margin="2,2,40,2"></FontIcon>
+                        <TextBlock>Casa de Fernando</TextBlock>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" 
+                                  Glyph="&#xE72A;"
+                                  Margin="40,2,2,2"></FontIcon>
+                    </StackPanel>
+                    
+                  
+                </ListView>
+
+            </PivotItem>
+
+        </Pivot>
+        
+    </RelativePanel>
+</Page>
