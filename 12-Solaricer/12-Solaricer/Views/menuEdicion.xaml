@@ -1,0 +1,124 @@
+﻿<Page
+    x:Class="_12_Solaricer.Views.menuEdicion"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_12_Solaricer.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer>
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Personal information" 
+                   Grid.Column="0" Grid.Row="0" 
+                   Grid.ColumnSpan="2" 
+                   HorizontalAlignment="Center"
+                   FontSize="26"></TextBlock>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="10,10,10,10">
+            <TextBlock Text="First name"></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+            
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="10,10,10,10">
+            <TextBlock Text="Last Name"></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="2" Margin="10,10,10,10">
+            <TextBlock Text="Adress"></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="10,10,10,10">
+            <TextBlock Text="Phone"></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+
+
+        <TextBlock Text="Roof information" 
+                   Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" 
+                   HorizontalAlignment="Center"
+                   FontSize="26"></TextBlock>
+
+
+        <StackPanel Grid.Column="0" Grid.Row="4" Margin="10,10,10,10">
+            <TextBlock Text="Roof height"></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="4" Margin="10,10,10,10">
+            <TextBlock Text="Roof size"></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="5" Margin="10,10,10,10">
+            <TextBlock Text="Roof type"></TextBlock>
+            <ComboBox>
+                <ComboBoxItem>
+                    <TextBlock>Open Gable</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Box Gable</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Dormer</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Hip</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Hexagonal Gazebo</TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+                <CheckBox Content="House accepted" ></CheckBox>
+            </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="5" Margin="10,10,10,10">
+            <TextBlock Text="Energy bill"></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" Margin="10,10,10,10">
+            <TextBlock Text="Aditional information" HorizontalAlignment="Center" FontSize="26"></TextBlock>
+            <TextBox  PlaceholderText="Type your notes here" AcceptsReturn="True"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="7" Margin="10,10,10,10">
+
+                <Button Content="Add images" Background="Orange" Foreground="White"></Button>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="7" Margin="10,10,10,10">
+
+            <Button Content="Send" HorizontalAlignment="Right" Background="Orange" Foreground="White"></Button>
+            
+        </StackPanel>
+
+
+            
+        
+
+    </Grid>
+    </ScrollViewer>
+
+</Page>

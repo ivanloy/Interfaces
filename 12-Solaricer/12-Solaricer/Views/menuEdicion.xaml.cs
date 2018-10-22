@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.Services.Maps;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -21,24 +20,11 @@ namespace _12_Solaricer.Views
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class principalMenu : Page
+    public sealed partial class menuEdicion : Page
     {
-        public principalMenu()
+        public menuEdicion()
         {
             this.InitializeComponent();
-
-            MapService.ServiceToken = " i0LX0ZtyCNlqrCpfAe4o~UOcr-lGr9izrFCmZtL2qjg~AttsrrQUiwrEJOnzJkpGooFH-_dKrzLCSmjLJR6cu9ZMhiAsoEVrSTtw1DXYJL82";
-        }
-
-        private void StackPanel_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-
-                    this.Frame.Navigate(typeof(menuEdicion));
-
-            }
-
-            
-
         }
     }
-
+}

@@ -8,9 +8,9 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-
-    <RelativePanel HorizontalAlignment="Center">
-
+    <ScrollViewer>
+        <RelativePanel HorizontalAlignment="Center">
+        
         <TextBlock Name="txtb_logo"
                    Text="Serius Solar" 
                    FontSize="80" 
@@ -41,7 +41,7 @@
             >
         </TextBlock>
 
-        <Button  Name="btn_send"
+            <Button  Name="btn_send"
                  Content="Sign in"
                  Click="btn_send_Click"
                  HorizontalAlignment="Center"
@@ -50,12 +50,11 @@
                  Height="40"
                  Margin="2,40,2,2"
                  RelativePanel.AlignLeftWith="txtb_logo"
-                 RelativePanel.AlignRightWith="txtb_logo">
-            
-
-        </Button>
-
-    </RelativePanel>
-    
+                 RelativePanel.AlignRightWith="txtb_logo"
+                 Background="Orange" Foreground="White">
+            </Button>
+        
+        </RelativePanel>
+    </ScrollViewer>
     
 </Page>
