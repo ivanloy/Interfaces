@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Services.Maps;
+using Windows.UI;
+using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,6 +30,11 @@ namespace _12_Solaricer.Views
         public principalMenu()
         {
             this.InitializeComponent();
+
+
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Disabled;
+
+         
 
             MapService.ServiceToken = " i0LX0ZtyCNlqrCpfAe4o~UOcr-lGr9izrFCmZtL2qjg~AttsrrQUiwrEJOnzJkpGooFH-_dKrzLCSmjLJR6cu9ZMhiAsoEVrSTtw1DXYJL82";
         }

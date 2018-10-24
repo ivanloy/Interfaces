@@ -6,53 +6,80 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    x:Name="pagina">
 
+    
+       
+    
     <ScrollViewer>
-        <RelativePanel HorizontalAlignment="Center">
-        
-        <TextBlock Name="txtb_logo"
+
+        <RelativePanel HorizontalAlignment="Center" >
+            <!--<RelativePanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="../Assets/bck.jpg"/>
+            </RelativePanel.Background>-->
+            <TextBlock Name="txtb_logo"
                    Text="Serius Solar" 
+                   Foreground="White"
                    FontSize="80" 
                    HorizontalAlignment="Center" 
-                   Margin="2,100,2,2"
+                   Margin="2,40,2,2"
                    RelativePanel.AlignTopWithPanel="True"></TextBlock>
 
-        <TextBox Name="txt_nombre"
-                 HorizontalAlignment="Center"
-                 RelativePanel.Below="txtb_logo"
-                 Width="400"
-                 Margin="2,40,2,2"
-                 RelativePanel.AlignLeftWith="txtb_logo"
-                 RelativePanel.AlignRightWith="txtb_logo"></TextBox>
+            <TextBox Name="txt_nombre"
+                     HorizontalAlignment="Center"
+                     RelativePanel.Below="txtb_logo"
+                     Margin="2,40,2,2"
+                     Width="400"
+                     BorderThickness="0,0,0,1" 
+                     PlaceholderText="user"
+                     FocusVisualPrimaryBrush="Transparent"
+                     FocusVisualSecondaryBrush="Transparent"
+                        ></TextBox>
 
-        <PasswordBox Name="txt_password"
-                 HorizontalAlignment="Center"
-                 RelativePanel.Below="txt_nombre"
-                 Width="400"
-                 Margin="2,40,2,2"
-                 RelativePanel.AlignLeftWith="txtb_logo"
-                 RelativePanel.AlignRightWith="txtb_logo"></PasswordBox>
 
-        <TextBlock Name="txtb_ayuda"
+            <PasswordBox  Width="400" 
+                          BorderThickness="0,0,0,1"
+                          Name="txt_password"
+                          HorizontalAlignment="Center"
+                          RelativePanel.Below="txt_nombre"
+                          Margin="2,40,2,2"
+                          RelativePanel.AlignLeftWith="txtb_logo"
+                          RelativePanel.AlignRightWith="txtb_logo"
+                          PlaceholderText="password"></PasswordBox>    
+
+
+
+            <TextBlock Name="txtb_ayuda"
                    Text="Can't sign in?"
+                   Foreground="White"
                    RelativePanel.Below="txt_password"
                    RelativePanel.AlignRightWith="txt_password"
+                   Margin="0,4,10,0"
             >
         </TextBlock>
 
-            <Button  Name="btn_send"
+            <Border  Name="btn_send"
+                     RelativePanel.AlignLeftWith="txtb_logo"
+                     RelativePanel.AlignRightWith="txtb_logo"
+                     HorizontalAlignment="Center"
+                     RelativePanel.Below="txt_password"
+                     BorderBrush="#D3D3D3"
+                     BorderThickness="1"
+                     CornerRadius="20"
+                     Margin="2,40,2,2">
+                
+                <Button  
                  Content="Sign in"
                  Click="btn_send_Click"
-                 HorizontalAlignment="Center"
-                 RelativePanel.Below="txt_password"
+                 BorderThickness="0"
                  Width="200"
                  Height="40"
-                 Margin="2,40,2,2"
-                 RelativePanel.AlignLeftWith="txtb_logo"
-                 RelativePanel.AlignRightWith="txtb_logo"
                  Background="Orange" Foreground="White">
-            </Button>
+                </Button>
+            </Border>
+
+           
         
         </RelativePanel>
     </ScrollViewer>

@@ -10,31 +10,31 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
 
-
     <Pivot>
         <PivotItem Header="ROUTE">
-                
-                <Border BorderThickness="3" BorderBrush="Black">
-                    <Maps:MapControl 
+
+            <Border BorderThickness="3" BorderBrush="Black">
+                <Maps:MapControl 
                            x:Name="MapControl1" 
                            MapServiceToken="i0LX0ZtyCNlqrCpfAe4o~UOcr-lGr9izrFCmZtL2qjg~AttsrrQUiwrEJOnzJkpGooFH-_dKrzLCSmjLJR6cu9ZMhiAsoEVrSTtw1DXYJL82"
                            ZoomInteractionMode="GestureAndControl"
                            TiltInteractionMode="GestureAndControl"/>
-                </Border>
-            </PivotItem>
+            </Border>
+        </PivotItem>
 
         <PivotItem Header="LIST"  HorizontalAlignment="Left">
             <ScrollViewer>
                 <ListView x:Name="listView1" Tapped="StackPanel_Tapped">
-                    
+
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Casa de Fernando"></TextBlock>
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE707;" Margin="0,0,10,0"></FontIcon>
+                        <TextBlock Text="Fernando Galiana | C/PcComponentes Nº4 | Tlfn: 954236981"></TextBlock>
                     </StackPanel>
-                    
+
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Sotano de Asun"></TextBlock>
                     </StackPanel>
-                    
+
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Tus sueños y esperanzas"></TextBlock>
                     </StackPanel>
@@ -44,10 +44,11 @@
 
         </PivotItem>
 
-        </Pivot>
 
-             
-   
+    </Pivot>
+
+
+
 </Page>
 
 
