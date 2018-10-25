@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="_13_VisualStateManager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_13_VisualStateManager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        
+        <StackPanel Background="DodgerBlue" 
+                    RelativePanel.AlignBottomWithPanel="True"
+                    RelativePanel.AlignTopWithPanel="True">
+            <FontIcon Glyph="&#xE712;" FontFamily="Segoe MDL2 Assets" Margin="4,4,4,4" Foreground="White"></FontIcon>
+            <FontIcon Glyph="&#xE7C3;" FontFamily="Segoe MDL2 Assets" Margin="4,4,4,4" Foreground="White"></FontIcon>
+            <FontIcon Glyph="&#xE80F;" FontFamily="Segoe MDL2 Assets" Margin="4,4,4,4" Foreground="White"></FontIcon> 
+        </StackPanel>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            
+        </Grid>
+        
+    </RelativePanel>
+</Page>
