@@ -18,10 +18,46 @@
                         <AdaptiveTrigger MinWindowWidth="600"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="stk_barra.AlignBottomWithPanel" Value="True"></Setter>
-                        <Setter Target="stk_barra.AlignLeftWithPanel" Value="True"></Setter>
-                        <Setter Target="stk_barra.AlignTopWithPanel" Value="True"></Setter>
-                        <Setter Target="g_galeria.RightOf" Value="stk_barra"></Setter>
+                        <Setter Target="stk_barra.(Relativepanel.AlignBottomWithPanel)" Value="True"></Setter>
+                        <Setter Target="stk_barra.(Relativepanel.AlignLeftWithPanel)" Value="True"></Setter>
+                        <Setter Target="stk_barra.(Relativepanel.AlignTopWithPanel)" Value="True"></Setter>
+                        <Setter Target="g_galeria.(Relativepanel.RightOf)" Value="stk_barra"></Setter>
+
+                        <Setter Target="imagen1.(Grid.Row)" Value="0"></Setter>
+                        <Setter Target="imagen1.(Grid.Column)" Value="0"></Setter>
+
+                        <Setter Target="imagen2.(Grid.Row)" Value="0"></Setter>
+                        <Setter Target="imagen2.(Grid.Column)" Value="1"></Setter>
+
+                        <Setter Target="imagen3.(Grid.Row)" Value="0"></Setter>
+                        <Setter Target="imagen3.(Grid.Column)" Value="2"></Setter>
+
+                        
+                        
+                        
+                        
+                        <Setter Target="imagen4.(Grid.Row)" Value="1"></Setter>
+                        <Setter Target="imagen4.(Grid.Column)" Value="0"></Setter>
+
+                        <Setter Target="imagen5.(Grid.Row)" Value="1"></Setter>
+                        <Setter Target="imagen5.(Grid.Column)" Value="1"></Setter>
+
+                        <Setter Target="imagen6.(Grid.Row)" Value="1"></Setter>
+                        <Setter Target="imagen6.(Grid.Column)" Value="2"></Setter>
+
+
+
+
+
+                        <Setter Target="imagen7.(Grid.Row)" Value="2"></Setter>
+                        <Setter Target="imagen7.(Grid.Column)" Value="0"></Setter>
+
+                        <Setter Target="imagen8.(Grid.Row)" Value="2"></Setter>
+                        <Setter Target="imagen8.(Grid.Column)" Value="1"></Setter>
+
+                        <Setter Target="imagen9.(Grid.Row)" Value="2"></Setter>
+                        <Setter Target="imagen9.(Grid.Column)" Value="2"></Setter>
+
                     </VisualState.Setters>
                 </VisualState>
 
@@ -61,17 +97,17 @@
             </Grid.RowDefinitions>
 
 
-            <Image Source="Assets/foca.jpg" Grid.Column="0" Grid.Row="0"></Image>
-            <Image Source="Assets/foca.jpg" Grid.Column="1" Grid.Row="0"></Image>
-            <Image Source="Assets/foca.jpg" Grid.Column="2" Grid.Row="0"></Image>
-            
-            <Image Source="Assets/foca.jpg" Grid.Column="0" Grid.Row="1"></Image>
-            <Image Grid.Column="1" Grid.Row="1"></Image>
-            <Image Source="Assets/foca.jpg" Grid.Column="2" Grid.Row="1"></Image>
+            <Image Name="imagen1" Source="Assets/foca.jpg"></Image>
+            <Image Name="imagen2" Source="Assets/foca.jpg"></Image>
+            <Image Name="imagen3" Source="Assets/foca.jpg"></Image>
 
-            <Image Source="Assets/foca.jpg" Grid.Column="0" Grid.Row="2"></Image>
-            <Image Source="Assets/foca.jpg" Grid.Column="1" Grid.Row="2"></Image>
-            <Image Source="Assets/foca.jpg" Grid.Column="2" Grid.Row="2"></Image>
+            <Image Name="imagen4" Source="Assets/foca.jpg"></Image>
+            <Image Name="imagen5" Source="Assets/foca.jpg"></Image>
+            <Image Name="imagen6" Source="Assets/foca.jpg"></Image>
+
+            <Image Name="imagen7" Source="Assets/foca.jpg"></Image>
+            <Image Name="imagen8" Source="Assets/foca.jpg"></Image>
+            <Image Name="imagen9" Source="Assets/foca.jpg"></Image>
 
         </Grid>
         
