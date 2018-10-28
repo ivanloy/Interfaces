@@ -9,28 +9,70 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <RelativePanel>
-        
-        <StackPanel Background="DodgerBlue" 
-                    RelativePanel.AlignBottomWithPanel="True"
-                    RelativePanel.AlignTopWithPanel="True">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="grupo1">
+    
+                <VisualState x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="stk_barra.AlignBottomWithPanel" Value="True"></Setter>
+                        <Setter Target="stk_barra.AlignLeftWithPanel" Value="True"></Setter>
+                        <Setter Target="stk_barra.AlignTopWithPanel" Value="True"></Setter>
+                        <Setter Target="g_galeria.RightOf" Value="stk_barra"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="Narrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="stk_barra.AlignRightWithPanel" Value="True"></Setter>
+                        <Setter Target="stk_barra.AlignLeftWithPanel" Value="True"></Setter>
+                        <Setter Target="stk_barra.AlignTopWithPanel" Value="True"></Setter>
+                        <Setter Target="g_galeria.Below" Value="stk_barra"></Setter>
+                    </VisualState.Setters>
+                </VisualState>
+
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <StackPanel Name="stk_barra"
+                    Background="DodgerBlue" >
             <FontIcon Glyph="&#xE712;" FontFamily="Segoe MDL2 Assets" Margin="4,4,4,4" Foreground="White"></FontIcon>
             <FontIcon Glyph="&#xE7C3;" FontFamily="Segoe MDL2 Assets" Margin="4,4,4,4" Foreground="White"></FontIcon>
             <FontIcon Glyph="&#xE80F;" FontFamily="Segoe MDL2 Assets" Margin="4,4,4,4" Foreground="White"></FontIcon> 
         </StackPanel>
 
-        <Grid>
+        <Grid Name="g_galeria">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
+
+
+            <Image Source="Assets/foca.jpg" Grid.Column="0" Grid.Row="0"></Image>
+            <Image Source="Assets/foca.jpg" Grid.Column="1" Grid.Row="0"></Image>
+            <Image Source="Assets/foca.jpg" Grid.Column="2" Grid.Row="0"></Image>
             
+            <Image Source="Assets/foca.jpg" Grid.Column="0" Grid.Row="1"></Image>
+            <Image Grid.Column="1" Grid.Row="1"></Image>
+            <Image Source="Assets/foca.jpg" Grid.Column="2" Grid.Row="1"></Image>
+
+            <Image Source="Assets/foca.jpg" Grid.Column="0" Grid.Row="2"></Image>
+            <Image Source="Assets/foca.jpg" Grid.Column="1" Grid.Row="2"></Image>
+            <Image Source="Assets/foca.jpg" Grid.Column="2" Grid.Row="2"></Image>
+
         </Grid>
         
     </RelativePanel>
