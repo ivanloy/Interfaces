@@ -27,16 +27,15 @@
                     FontSize="20"
                     Background="LightGray"
                     Click="HamburgerButton_Click" />
-
-            
+         
         </RelativePanel>
 
-        <TextBlock Name="Titulo" Grid.Column="1" Grid.Row="0"></TextBlock>
+        <TextBlock Name="Titulo"  Grid.Column="1" Grid.Row="0" FontSize="30" Grid.ColumnSpan="1"></TextBlock>
 
         <SplitView Name="MySplitView"
                    OpenPaneLength="200" 
                    CompactPaneLength="44"
-                   DisplayMode="CompactOverlay"
+                   DisplayMode="CompactInline"
                    Grid.Row="1" >
             <SplitView.Pane>
 

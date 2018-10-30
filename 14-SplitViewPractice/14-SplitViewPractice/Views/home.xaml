@@ -10,7 +10,7 @@
 
     <RelativePanel>
 
-        <TextBlock Text="Soy el home"></TextBlock>
+        <TextBlock Text="Soy el home" ></TextBlock>
         
     </RelativePanel>
 </Page>
