@@ -36,7 +36,7 @@ namespace _14_SplitViewPractice
         private void HomeListBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.frame.Navigate(typeof(home));
-            Titulo.Text = "Home";
+            Titulo.Text = "Inicio";
 
             if (MySplitView.IsPaneOpen) {
 
@@ -49,13 +49,27 @@ namespace _14_SplitViewPractice
         private void MensaggesListBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.frame.Navigate(typeof(messages));
-            Titulo.Text = "Messages";
+            Titulo.Text = "Mensajes";
 
             if (MySplitView.IsPaneOpen)
             {
 
                 MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
             }
+        }
+
+        private void CatalogoListBoxItem_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+            this.frame.Navigate(typeof(catalogo));
+            Titulo.Text = "Catalogo";
+
+            if (MySplitView.IsPaneOpen)
+            {
+
+                MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+            }
+
         }
     }
 }

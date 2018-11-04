@@ -10,7 +10,25 @@
 
     <RelativePanel>
 
-        <TextBlock Text="Soy el home" ></TextBlock>
-        
+        <TextBlock Text="Bienvenido" 
+                   Name="Bienvenido"
+                   HorizontalAlignment="Center" 
+                   RelativePanel.AlignTopWithPanel="True"
+                   RelativePanel.AlignLeftWithPanel="True"
+                   RelativePanel.AlignRightWithPanel="True"
+                   FontSize="40"></TextBlock>
+
+        <TextBlock Text="En esta página web usted podrá solo volumenes 1 de sus series favoritas, asi somos :,)"  
+                   Name="Descripcion"
+                   HorizontalAlignment="Center" 
+                   RelativePanel.Below="Bienvenido"
+                   RelativePanel.AlignLeftWith="Bienvenido"
+                   RelativePanel.AlignRightWith="Bienvenido"
+                   FontSize="20"
+                   Margin="0,20,0,0"></TextBlock>
+
+
+
+
     </RelativePanel>
 </Page>

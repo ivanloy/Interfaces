@@ -13,10 +13,11 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
@@ -30,13 +31,14 @@
          
         </RelativePanel>
 
-        <TextBlock Name="Titulo"  Grid.Column="1" Grid.Row="0" FontSize="30" Grid.ColumnSpan="1"></TextBlock>
-
+        <TextBlock Name="Titulo"  Grid.Column="1" Grid.Row="0" FontSize="30" Grid.ColumnSpan="1" Margin="20,0,0,0"></TextBlock>
+        <SearchBox Grid.Column="2" Grid.Row="0" Width="300" HorizontalAlignment="Right"/>
+        
         <SplitView Name="MySplitView"
                    OpenPaneLength="200" 
                    CompactPaneLength="44"
-                   DisplayMode="CompactInline"
-                   Grid.Row="1" >
+                   DisplayMode="CompactOverlay"
+                   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
             <SplitView.Pane>
 
                 <ListBox SelectionMode="Single" 
@@ -53,8 +55,15 @@
 
                     <ListBoxItem Name="MensaggesListBoxItem" Tapped="MensaggesListBoxItem_Tapped">
                         <StackPanel Orientation="Horizontal">
-                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE715;" />
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE15F;" />
                             <TextBlock Text="Mensajes" FontSize="16" Margin="20,0,0,0" />
+                        </StackPanel>
+                    </ListBoxItem>
+
+                    <ListBoxItem Name="CatalogoListBoxItem" Tapped="CatalogoListBoxItem_Tapped">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" Text="&#xE77F;" />
+                            <TextBlock Text="Catalogo" FontSize="16" Margin="20,0,0,0" />
                         </StackPanel>
                     </ListBoxItem>
 
