@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="_15_BindingEntreControles.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:_15_BindingEntreControles"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        <Slider Name="sld_barra"
+                RelativePanel.AlignTopWithPanel="True"
+                Width="200"
+                Minimum="10" 
+                Maximum="50" 
+                Value="{Binding ElementName=txtbx_introducir, Mode=TwoWay, Path=Text}" 
+                TickFrequency="10" 
+                TickPlacement="TopLeft"></Slider>
+
+        <TextBlock Name="txtb_texto"
+                   Text="Hola soy un ejemplo"
+                   FontSize="{Binding ElementName=txtbx_introducir, Mode=OneWay, Path=Text}"
+                   RelativePanel.Below="sld_barra"></TextBlock>
+
+        <TextBox Name="txtbx_introducir"
+                 RelativePanel.Below="txtb_texto"></TextBox>
+
+    </RelativePanel>
+    
+</Page>

@@ -18,8 +18,9 @@
                    RelativePanel.AlignRightWithPanel="True"
                    FontSize="40"></TextBlock>
 
-        <TextBlock Text="En esta página web usted podrá solo volumenes 1 de sus series favoritas, asi somos :,)"  
+        <TextBlock Text="En esta página web usted podrá comprar solo volumenes 1 de sus series favoritas, asi somos :,)"  
                    Name="Descripcion"
+                   TextWrapping="Wrap"
                    HorizontalAlignment="Center" 
                    RelativePanel.Below="Bienvenido"
                    RelativePanel.AlignLeftWith="Bienvenido"

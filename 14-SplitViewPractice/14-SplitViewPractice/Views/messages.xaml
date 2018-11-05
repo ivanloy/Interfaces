@@ -10,7 +10,7 @@
 
     <RelativePanel>
 
-        <TextBlock Text="Soy el los mensajes"></TextBlock>
+        <TextBlock Text="No hay mensajes disponibles"></TextBlock>
 
     </RelativePanel>
 </Page>

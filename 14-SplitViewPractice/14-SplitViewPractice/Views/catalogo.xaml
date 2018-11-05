@@ -35,7 +35,7 @@
                     </Flyout>
                 </FlyoutBase.AttachedFlyout>
             </Image>
-            <TextBlock Text="Karakai Jouzu no Takagi-san 1" Margin="0,10" TextAlignment="Center"></TextBlock>
+            <TextBlock Text="Karakai Jouzu no Takagi-san 1" Margin="0,10" TextAlignment="Center" TextWrapping="Wrap"></TextBlock>
             
         </StackPanel>
 
@@ -51,7 +51,7 @@
                     </Flyout>
                 </FlyoutBase.AttachedFlyout>
             </Image>
-            <TextBlock Text="Tsurezure Children 1" Margin="0,10" TextAlignment="Center"></TextBlock>
+            <TextBlock Text="Tsurezure Children 1" Margin="0,10" TextAlignment="Center" TextWrapping="Wrap"></TextBlock>
 
         </StackPanel>
         
@@ -67,7 +67,7 @@
                     </Flyout>
                 </FlyoutBase.AttachedFlyout>
             </Image>
-            <TextBlock Text="Ao no Flag 1" Margin="0,10" TextAlignment="Center"></TextBlock>
+            <TextBlock Text="Ao no Flag 1" Margin="0,10" TextAlignment="Center" TextWrapping="Wrap"></TextBlock>
 
         </StackPanel>
 
