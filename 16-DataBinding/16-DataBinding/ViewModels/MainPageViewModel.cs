@@ -17,11 +17,13 @@ namespace _16_DataBinding.ViewModels
         private List<clsDepartamento> _ListadoDeDepartamentos;
         private clsPersona _PersonaSelecionada;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+
 
         #endregion
 
         #region propiedades publicas
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public List<clsPersona> ListadoDePersonas {
 
@@ -82,6 +84,18 @@ namespace _16_DataBinding.ViewModels
         }
 
         #endregion
+
+
+
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(name));
+            }
+        }
 
     }
 }
