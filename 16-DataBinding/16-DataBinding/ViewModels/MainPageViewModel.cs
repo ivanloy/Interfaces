@@ -67,6 +67,7 @@ namespace _16_DataBinding.ViewModels
             set {
 
                 _PersonaSelecionada = value;
+                OnPropertyChanged("PersonaSelecionada");
             }
         }
 
