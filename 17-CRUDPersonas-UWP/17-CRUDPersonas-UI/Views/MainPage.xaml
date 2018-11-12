@@ -40,18 +40,19 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0">
-                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE109;" Margin="8,8,8,8" FontSize="30"></FontIcon>
-                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE105;" Margin="8,8,8,8" FontSize="30"></FontIcon>
-                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE107;" Margin="8,8,8,8" FontSize="30"></FontIcon>
+            <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0" Margin="0,0,0,16">
+                <AppBarButton Icon="Add" Label="Agregar"></AppBarButton>
+                <AppBarButton Icon="Save" Label="Guardar"></AppBarButton>
+                <AppBarButton Icon="Delete" Label="Borrar" Command="{Binding Path=eliminarCommand}"></AppBarButton>
+                <AppBarButton Icon="Refresh" Label="Recargar" Command="{Binding Path=actualizarListadoCommand}"></AppBarButton>
+                <!--<FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE107;" Margin="8,8,8,8" FontSize="30"></FontIcon>-->
             </StackPanel>
 
 
             <TextBox Grid.Column="0" Grid.Row="1" 
                      Text="{Binding Path=PersonaSelecionada.nombre, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      Margin="4"
-                     PlaceholderText="Nombre"
-                     Width="200"></TextBox>
+                     PlaceholderText="Nombre"></TextBox>
 
             <TextBox Grid.Column="0" Grid.Row="2" 
                      Text="{Binding Path=PersonaSelecionada.apellidos, Mode=TwoWay}"
@@ -72,6 +73,22 @@
                      Text="{Binding Path=PersonaSelecionada.telefono, Mode=TwoWay}"
                      Margin="4"
                      PlaceholderText="Teléfono"></TextBox>
+
+            <ComboBox Grid.Column="0" Grid.Row="6"
+                      Margin="4"
+                      ItemsSource="{Binding ListadoDeDepartamentos}"
+                      SelectedValuePath="ID"
+                      SelectedValue="{Binding PersonaSelecionada.idDepartamento, Mode=TwoWay}">
+                
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Path=nombre, Mode=TwoWay}">
+                            
+                        </TextBlock>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+                
+            </ComboBox>
 
 
         </Grid>
